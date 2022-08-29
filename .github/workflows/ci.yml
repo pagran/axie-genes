@@ -42,10 +42,10 @@ jobs:
         run: corepack enable
 
       - name: Install Dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Lint
-        run: pnpm run lint
+        run: npm run lint
 
   typecheck:
     runs-on: ${{ matrix.os }}
@@ -68,10 +68,10 @@ jobs:
         run: corepack enable
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Typecheck
-        run: pnpm run typecheck
+        run: npm run typecheck
 
   test:
     runs-on: ${{ matrix.os }}
@@ -94,10 +94,10 @@ jobs:
         run: corepack enable
 
       - name: Install Dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Unit Test
-        run: pnpm run test
+        run: npm run test
 
   js-cs-fixer:
     if: github.event_name == 'pull_request' && ! startsWith(github.ref, 'refs/heads/auto-fixed/')
@@ -121,7 +121,7 @@ jobs:
         run: corepack enable
 
       - name: Install Dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Prepare Git User
         run: |
@@ -130,7 +130,7 @@ jobs:
           git checkout -B "${{ env.FIXER_BRANCH }}"
 
       - name: Apply auto-fixers
-        run: pnpm lint:fix
+        run: npm lint:fix
 
       - name: Create Fixer PR
         run: |

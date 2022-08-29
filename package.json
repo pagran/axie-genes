@@ -1,21 +1,21 @@
 {
-  "name": "@ow3/dummy-ts-pkg",
+  "name": "axie-genes",
   "version": "0.2.3",
   "description": "",
-  "author": "Chris Breuer <chris@ow3.org>",
+  "author": "Just Pagran <pagran@pm.me>",
   "license": "MIT",
-  "homepage": "https://github.com/openwebstacks/ts-starter#readme",
+  "homepage": "https://github.com/pagran/axie-genes#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openwebstacks/ts-starter.git"
+    "url": "git+https://github.com/pagran/axie-genes.git"
   },
   "bugs": {
-    "url": "https://github.com/openwebstacks/ts-starter/issues"
+    "url": "https://github.com/pagran/axie-genes/issues"
   },
   "keywords": [
     "typescript",
-    "starter",
-    "kit",
+    "axie",
+    "genes",
     "package"
   ],
   "sideEffects": false,
