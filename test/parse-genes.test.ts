@@ -3,6 +3,7 @@ import parseGenes512 from '../src/genes512'
 import testAxies from './test-axies.json'
 
 const preparedAxies = testAxies.map((a) => {
+  // @ts-expect-error: No overload matches this call.
   a.axie.parts = new Map(a.axie.parts)
   return a
 })
